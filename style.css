@@ -1,0 +1,27 @@
+body {
+
+background-color: green;
+font-size: 35px;
+color: white;
+margin:200px 0; 
+padding:0;
+text-align:center;
+
+}
+.big-btn {
+    width: 200px;
+    height: 60px;
+    margin: 50px 0;
+    padding:0;
+}
+div{
+
+    display:inline-block;
+
+}
+
+p{
+margin: -20px;
+font-size: 20px;
+
+}
