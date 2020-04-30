@@ -9,7 +9,7 @@
     <h3>Sikanoppa</h3>
     <p>Kahden nopan versio</p>
 
-    <button onclick="rollDice2()" class="big-btn">Heitä kahta noppaa!</button>
+    <button onclick="rollDice2(); isohomo()" class="big-btn" id="homo">Heitä kahta noppaa!</button>
     <script src="js.js"></script>
     <button onclick="window.location.href='/index.html'">Avaa yhden nopan versio</button>
     <br>
@@ -17,6 +17,6 @@
   <div id="die1"></div>
   <div id="die2"></div>
   <h2 id="status"></h2>
-  
+  <div id="score"></div>
 </body>
 </html>
