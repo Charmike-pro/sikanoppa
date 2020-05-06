@@ -1,22 +1,45 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
+
+
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Sikanoppa</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h3>Sikanoppa</h3>
-    <p>Kahden nopan versio</p>
 
-    <button onclick="rollDice2(); isohomo()" class="big-btn" id="homo">Heitä kahta noppaa!</button>
+    <h>Sikanoppa</h>
+      <p>Pyryn ja Sebastianin tekemä sikanoppapeli</p>
+      <button onclick="window.location.href = '/index.html';">Yhden nopan versio!</button>
+      <br>
+    <div class="content">
+        <div>
+            <div id="die1" class="dice">0</div><div id="die2" class="dice">0</div>
+        </div>
+        <div class="buttons">
+            <button onclick="rollDice()">Heitä noppa</button><br>
+            <p>Vuoro:</p>
+            <span id="player_name"></span><br>
+            <button onclick="endTurn()">Vaihda vuoroa</button>
+        </div>
+        <div class="info" id="info">
+        </div>
+    </div>
+    <h2 id="status" class="left"></h2><br><br>
+    <h2 id="status2" class="left"></h2><br>
     <script src="js.js"></script>
-    <button onclick="window.location.href='/index.html'">Avaa yhden nopan versio</button>
-    <br>
-    
-  <div id="die1"></div>
-  <div id="die2"></div>
-  <h2 id="status"></h2>
-  <div id="score"></div>
 </body>
+
+
+
 </html>

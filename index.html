@@ -1,17 +1,45 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
 <head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Sikanoppa</title>
-</head>  
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <body>
-  <h3>Sikanoppa</h3>
-  <p>Yhden nopan versio</p>
-  <button onclick="rollDice(); gayass()" class="big-btn">Heitä yhtä noppaa!</button>
-  <script src="js.js"></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <button onclick="window.location.href='/por.html'">Avaa kahden nopan versio</button>
-  <br>
-<div id="die1" class="dice"></div>
-<br>
-<br>
+
+    <h3>Sikanoppa</h3>
+    <p>Pyryn ja Sebastianin tekemä sikanoppapeli</p>
+    <button onclick="window.location.href = '/por.html';">Kahden nopan versio!</button>
+    <br>
+    <div class="content">
+        <div>
+            <div id="die1" class="dice">0</div>
+        </div>
+        <div class="buttons">
+            <button onclick="rollDice2()">Roll Dice</button><br>
+            <p>Vuoro:</p>
+            <span id="player_name"></span><br>
+            <button onclick="endTurn()">Change Turns</button>
+        </div>
+        <div class="info" id="info">
+        </div>
+    </div>
+    <h2 id="status"></h2><br><br>
+    <h2 id="status2"></h2><br>
+    <script src="js.js"></script>
 </body>
+
+
+
 </html>
