@@ -138,11 +138,28 @@ function rollDice2() {
 
   if (d1 == 999) {
 
+      message = "Heitit kaksi ykköstä! Saat 25 pistettä!";
+
+      diceTotal = 25;
+
+      score += diceTotal;
+
       update();
 
       return;
 
   }
+
+  else if (d1 == d2) {
+
+      message = "Heitit tuplat! Saat tuplapisteet!";
+
+      diceTotal = (d1 + d2) * 2;
+
+      update();
+
+  }
+
   else if (score == 100) {
 
       alert("Sait 100 pistettä. Voitit pelin!");
@@ -165,7 +182,7 @@ function rollDice2() {
 
   } else {
 
-      diceTotal = d1;
+      diceTotal = d1 + d2;
 
   }
   score += diceTotal;
